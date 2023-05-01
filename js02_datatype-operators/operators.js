@@ -131,10 +131,33 @@ console.log({ b })
 
 // //* MOD
 // //*--------------------------------------
-const number = prompt("Please enter a 3-digits number")
+// const number = prompt("Please enter a 3-digits number")
 
-const ones = number % 10 
-const tens = Math.floor(number / 10) % 10
-const hundreds = Math.trunc(number/100)
+// const ones = number % 10
+// const tens = Math.floor(number / 10) % 10
+// const hundreds = Math.trunc(number/100)
 
-console.log(`Hundreds: ${hundreds}, Tens: ${tens}, Ones: ${ones}`);
+// console.log(`Hundreds: ${hundreds}, Tens: ${tens}, Ones: ${ones}`);
+
+
+// * ================================================
+// *          KARSILASTIRMA OPERATORLERI
+// * ================================================
+
+const num1 = 3
+
+console.log(num1 == 3);//? True
+console.log(num1 === 3);//? True
+console.log(num1 === '3'); //? False
+
+const num2 = '3'
+
+console.log(num1 == num2);//? True
+console.log(num1 != num2);//? False
+
+const num3 = 5
+const num4 = "1"
+console.log(num1 > num3);//? False
+console.log(num1 <= num3);//? True
+
+console.log(num2 > num4);//? True  asciiye göre kıyaslama yapılır

@@ -6,3 +6,5 @@ clg(++y) 6
 clg(y++) 6
 
 programın devamında kullanmak istediğimde 7 yi göreceğim
+
+ascii
