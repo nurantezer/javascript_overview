@@ -185,3 +185,56 @@ if (age >= 18 && healty == true) {
 }else {
     console.log("ehliyet alamaz");
 }
+
+//? Javascripte surekli falsy olan 6 deger bulunmaktadir.
+const nal = null
+const tanimsiz = undefined
+const bos = ""
+const sayiDegil = NaN
+const sifir = 0
+const falsy = false
+
+console.log(v1 && null); //? false(null yazar) hepsi true ise en sondaki true alır.
+//? False ilk falsy yazdırır.
+console.log(v1 && 0); //? 0
+console.log(v1 && null && true && true) //? null
+console.log(v1 && 4 && true && 5) //? 5 
+console.log(v1 || 0);//? ilk birinci trueyu gördüğünde diğerlerine bakmasına
+//? gerek yok true
+
+console.log(Bloolean(5)); //? true
+console.log(Bloolean(0)); //? false
+console.log(Bloolean(-3)); //? true
+console.log(Bloolean(12.4)); //? true
+
+const num5 = 0
+
+if (num5 === true) {
+    console.log("sayı sıfır değildir");
+} else {
+    console.log("sayı sifirdir");
+}
+
+
+// * =============================================
+// *            TIP DONUSUMLERI
+// * =============================================
+
+const dolar = "1000"
+const tl = "500"
+
+const totalMoney = Number(dolar) + Number(tl)
+const totalMoney1 = +(dolar) + +(tl)
+const totalMoney2 = parseInt(dolar) + parseInt(tl) //?tamsayı
+const totalMoney3 = parseFloat(dolar) + parseFloat(tl) //?virgüllü
+console.log(totalMoney);
+
+console.log(Number(null)); //? 0
+console.log(Number("12.3")); //? 12.3
+console.log(Number("")); //? 0
+console.log(Number("1ab")); //? NaN
+console.log(Number("0b101")); //? 5 ("binary sayi sistemi")
+console.log(Number("0x10")) //? 16  (hex sayi sistemi)
+console.log(String(55));
+
+
