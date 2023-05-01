@@ -36,6 +36,10 @@ console.log(n1 + n2);//? String Concationation
 
 // n2 = n2 + 1; //! error
 
+// n2 = n2 + 1
+console.log(n2); //!Asignment to constant variable.
+ 
+
 //? ======================  LET  ========================
 //* LET de CONST gibi yaygın kullanılan değişken tanımlama yöntemidir.
 //* CONST'dan farkı, sadece tanımlama kısmında değil istenildiği zaman değeri değiştirilebilir.
@@ -63,3 +67,79 @@ console.log(typeof cohort); //? number
 // let cohort = "fs13" //!SyntaxError: Identifier 'cohort' has already been declared (at app.js:60:5)
 //! Ayni alan (scope) icerisinde ayni isimle yeniden degisken tanimlanamaz.
 
+let num1 = 5
+let num2 = 10
+let result = num1 + num2
+console.log(++result);
+
+//! JS ilk kez görmüş olduğu countu bir değişken olarak tanımladı
+count = 55  //! var olarak tanımladı
+console.log(count);
+count = 22
+console.log(count);
+
+//? ===================  VAR ===========================
+//* VAR ile bir değişken tanımlandığında LET de olduğu gibi değeri sonradan değiştirilebilir.
+//* VAR değişkenleri global degiskenler gibidir.
+//* LET ve CONST ile tanimlanan degiskenler block-scope 'dur
+//* Yani sadece tanimlandigi block (alan) icerisinde gecerlidir.
+
+var x = 11
+console.log(x);
+
+//? Cesitli blok (scope) ornekleri
+// if () {
+//     let x = 5
+// } else {
+//     x
+// }
+
+// for () {
+//     const y=4
+// }
+// console.log(y);
+
+
+//? Bir block oluşturduk. Blok denilince if-else,
+//? switch-case, fonksiyon vb. yapilarin ic alani dusunulebilir.
+{
+   //! Burası local bir alandır
+    let a = 2
+    const b = 3
+    console.log(a,b);
+}
+//! a ve b alanda tanımlı değildir
+// console.log(a, b); //! error
+
+{
+   //! Burası local bir alandır
+    var c = 99 //? var ile tanımlanan bir değişken hep global olur
+    console.log(c);
+    
+}
+console.log(c);
+
+//? Her hangi bir bloğun dışı global alandir
+var varNumber = 1; //* Global degiskenler
+let letNumber = 2;
+
+{
+  varNumber = 11; //* Global degiskenlere veri yaziyoruz
+  letNumber = 22;
+}
+//* Global degiskenleri okuyoruz.
+console.log(varNumber, letNumber);
+
+console.log("**********************");
+
+//*Global degiskenler
+var varNumber1 = 3;
+let letNumber1 = 4;
+{
+  var varNumber1 = 33;
+  let letNumber1 = 44; //! yeni bir local degisken olsuturduk
+  console.log(letNumber1); //! local degiskeni okuduk
+}
+
+//* Global degiskenleri okuyoruz
+console.log(varNumber1, letNumber1);
