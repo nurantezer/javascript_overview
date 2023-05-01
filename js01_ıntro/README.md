@@ -13,4 +13,8 @@ compiler tabanlı kodun tamamını derliyor.Maikne koduna çeviriyor(exe, dmg) B
 -- 1995 te 10 günde geliştirildi(Brendan Eich -nsecape ve mozilla çalışanı). O zamanki adı mochaydı. Sun microsistem markası lisansını aldıktan sonra adı LiveScript oldu. Sun kendi geliştirdiği java dilinin populerliğinden faydalanmak için adını JavaScript yaptılar.
 -- Js her browser için tek düze olsun diye ECMA grubu kuruldu. Çıkardıkları versiyonlara ECMAscript dendi.
 --2009 da ES5 yayınlandı. JS nin en önemli değişikliği. İkincisi ES6/ES2015 modern js bu. Kütüphaneler buna dayanıyor. Geliştirirken ES6 ile yazıyoruz eski browseri olanlar olur diye ES5 e çeviriyoruz transpilerler yapıyor bunu. 
--- Yeni çıkan versiyonlar arttırımsal, eskileri silmiyor.Babel çevrimi yapan bir transpiler. 
+-- Yeni çıkan versiyonlar arttırımsal, eskileri silmiyor.Babel çevrimi yapan bir transpiler.
+
+
+****EKLENTİlLER****
+--ES code sinippet
