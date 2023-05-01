@@ -161,3 +161,27 @@ console.log(num1 > num3);//? False
 console.log(num1 <= num3);//? True
 
 console.log(num2 > num4);//? True  asciiye göre kıyaslama yapılır
+
+
+// * ================================================
+// *          MANTIKSAL OPERATORLER
+// * ================================================
+
+const v1 = true
+const v2 = false
+
+console.log(v1 && v2);//? false hepsi true ise true üretir
+console.log(v1 || v2);//? true bir tanesinin true olması yeterli
+
+console.log(!v1);//? false
+
+//?Ornek
+const age = prompt("Please enter your age")
+const healty = confirm("Are you healty?")
+console.log(age, healty);
+
+if (age >= 18 && healty == true) {
+    console.log("Ehliyet alabilir");
+}else {
+    console.log("ehliyet alamaz");
+}

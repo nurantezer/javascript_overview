@@ -8,3 +8,7 @@ clg(y++) 6
 programın devamında kullanmak istediğimde 7 yi göreceğim
 
 ascii
+
+&& ve
+
+|| veya
