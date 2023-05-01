@@ -17,4 +17,4 @@ compiler tabanlı kodun tamamını derliyor.Maikne koduna çeviriyor(exe, dmg) B
 
 
 ****EKLENTİlLER****
---ES code sinippet
+--ES6 code sinippet
