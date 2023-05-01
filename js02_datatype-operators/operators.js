@@ -103,8 +103,38 @@
 // //* ARTTIRMA VE AZALTMA (Inc, Dec)
 // //*--------------------------------------
 
-let a = 5 
+//? Ornek : 1 eksiltme, 1 arttirma
+let a = 5
 a++
-console.log(a++); //? 6
+console.log(a++) //? 6
 y = a + 5 //? 7 + 5
-console.log(y); //? 12
+console.log(--y) //? 11
+
+// //? Ornek : 5 arttirma
+let z = 4
+z = z + 5
+z += 10 //? z = z + 10
+
+// //? Ornek : 10 eksiltme
+let k = 20
+k -= 10 //? k = k - 10
+console.log("k:", --k) //? k:9
+console.log({ k }) //? {k:9}
+
+// //? Ornek : 3 katini alma
+let b = 4
+b = b * 3
+b *= 3 //? b = b *3
+console.log({ b })
+
+
+
+// //* MOD
+// //*--------------------------------------
+const number = prompt("Please enter a 3-digits number")
+
+const ones = number % 10 
+const tens = Math.floor(number / 10) % 10
+const hundreds = Math.trunc(number/100)
+
+console.log(`Hundreds: ${hundreds}, Tens: ${tens}, Ones: ${ones}`);
