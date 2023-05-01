@@ -119,7 +119,7 @@ console.log(x);
 }
 console.log(c);
 
-//? Her hangi bir bloğun dışı global alandir
+//? Herhangi bir bloğun dışı global alandir
 var varNumber = 1; //* Global degiskenler
 let letNumber = 2;
 
