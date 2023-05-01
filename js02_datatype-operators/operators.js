@@ -49,3 +49,14 @@ console.log(name + " is " + (new Date().getFullYear() - yearOfBirth) + " years o
 
 const date = new Date()
 console.log(date);
+
+//! ========== Template Literals ============
+
+//? 3 sekilde de string tanimlanabilir.
+
+const message1 = "Merhaba Javascript"
+const message2 = 'Merhaba Javascript'
+const message3 = `Merhaba Javascript` //? Template literals
+
+console.log(`${name} is ${2022 - yearOfBirth} 
+years old`);
