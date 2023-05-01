@@ -60,3 +60,30 @@ const message3 = `Merhaba Javascript` //? Template literals
 
 console.log(`${name} is ${2022 - yearOfBirth} 
 years old`);
+
+
+// //* CAPRMA VE US ALMA (Multiply, Pow)
+// //*--------------------------------------
+
+//? Örnek
+// const r = +prompt("Please enter r:")
+//? Kullanıcıdan veri girişi istedik
+//? prompt ile kullanıcıdan alınan veri default olarak stringdir.
+//? Bu veriyi Number() fonksiyonu ile çevirebiliriz.
+const r = Number(prompt("Please enter r:"))
+const pi = 3.14
+const square = pi * r * r
+console.log(`Square of Circle: ${square}`);
+
+console.log(`Square of Circle: ${Math.floor(square)}`);
+console.log(`Square of Circle: ${Math.ceil(square)}`);
+console.log(`Square of Circle: ${Math.trunc(square)}`);
+console.log(`Square of Circle: ${Math.round(square)}`);
+
+//?Bazi fonksiyonlar
+// Math.floor();  //* her zaman en yakin alt tamsayiya yuvarlar
+// Math.ceil();  //* her zaman en yakin ust tam tamsayiya yuvarlar
+// Math.trunc(); //* sayinin tam kismini alir.
+// Math.round(); //* en yakin tam sayiya yuvarlar.
+// Math.random(); //* 0 ve 1 arasında rasgele sayi uretir.
+
