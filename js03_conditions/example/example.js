@@ -210,3 +210,17 @@
 // const minumunWage = 8500
 // const increaseSalary = salary >= minumunWage ? salary * 1.1 : salary * 1.5
 // console.log("Salary:", salary, "Increased Salary:", Math.trunc(increaseSalary))
+
+
+
+//*Soru-11 Kredi Risk Programı
+//? Console’dan kişinin gelir ve gider miktarını alan
+//? eğer kişinin geliri giderinden en az asgari ücret kadar fazla ise Kredi Verilebilir 🤑
+//? değilse Kredi Verilemez 🥺
+//? şeklinde çıktı veren kodu Ternary deyimi kullanarak yazınız.
+
+// const income = Number(prompt("Your Income:"))
+// const outcome = Number(prompt("Your Outcome:"))
+// const credibility = 
+//   income - outcome >= 8500 ? "LOAN AVAIBLE 🤑" : "LOAN NOT AVAIBLE 🥺"
+// console.log(credibility)
