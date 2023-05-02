@@ -36,18 +36,38 @@ console.log(" **** Conditions ****")
 // }
 
 //* 2.Yöntem
-let biggest = n1
+// let biggest = n1
 
-if (n2 >= biggest) {
-    biggest = n2
-}
+// if (n2 >= biggest) {
+//     biggest = n2
+// }
 
-if (n3 >= biggest) {
-    biggest = n3
-}
+// if (n3 >= biggest) {
+//     biggest = n3
+// }
 
-console.log(`${biggest} is biggest`)
+// console.log(`${biggest} is biggest`)
 
 //* 3.Yöntem
 
-console.log(`The Biggest: ${Math.max(n1, n2, n3)}`)
+// console.log(`The Biggest: ${Math.max(n1, n2, n3)}`)
+
+
+//? ORNEK3: kosullar birlestirilerek bir degiskene aktarilarak kullanilabilir.
+
+const year = 11
+const kidCount = 3
+const graduate = true
+const langCount = 5
+
+const increase = year >= 10 && kidCount >= 2 && graduate == true && 
+    langCount >= 2 
+
+if (increase === true) {
+        console.log("He or She deserve an increased salary")
+}
+//*iki şelilde de yazılabilir.
+if (increase) {
+        console.log("He or She deserve an increased salary")
+}
+
