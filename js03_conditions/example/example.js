@@ -172,3 +172,36 @@
 //   //!Eğer operator truty bir değerse sonucu göster, Null gibi falsy ise gösterme
 //   console.log(`${num1} ${operator} ${num2} = ${result}`)
 // }
+
+
+//*Soru-9 Clarusway’deki haftalık ders ve etkinlik programınızı, console’dan girilen gün değerine göre
+//* çıktı veren kodu switch-case yapısı ile yazınız.
+
+//? Pazartesi, Salı ,Çarşamba, Perşembe -> InClass
+//? Cuma -> Teamwork
+//? Cumartesi ->  InClass + Workshop
+//? Pazar -> Self-Study
+//? Aksi takdirde -> Yanlis gun girildi.
+
+// const day = prompt("Please select a day: ").toLowerCase() //! girilenleri küçük harfe çevir
+// switch (day) {
+//   case "monday":
+//   case "thuesday":
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Inclass")
+//     break
+//   case "friday":
+//     console.log("Teamwork")
+//     break
+//   case "saturday":
+//     console.log("Inclass and workshop")
+//     break
+//   case "sunday":
+//     console.log("Self study.")
+//     break
+//   default:
+//     console.log("Incorrect day")
+// }
+
+
