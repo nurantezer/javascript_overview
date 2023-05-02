@@ -1,0 +1,1 @@
+speed < 90 ? "Yavaş": speed < 120 ? "normal" : "hızlı"
