@@ -114,12 +114,37 @@
 
 //* Yukarıdaki bilgilere göre bir yılın artık yıl olup olmadığını konsola yazdıran conditional statement'i yazınız
 
-const yil = +prompt('lütfen bir yıl giriniz')
+// const yil = +prompt('lütfen bir yıl giriniz')
 
-if (yil % 400 === 0) {
-    console.log(`${yil} artık yıldır`)
-} else if (yil % 4 === 0 && yil % 100 !== 0) {
-    console.log(`${yil} artık yıldır`)
-} else {
-    console.log(`${yil} artık yıl değildir`)
+// if (yil % 400 === 0) {
+//     console.log(`${yil} artık yıldır`)
+// } else if (yil % 4 === 0 && yil % 100 !== 0) {
+//     console.log(`${yil} artık yıldır`)
+// } else {
+//     console.log(`${yil} artık yıl değildir`)
+// }
+
+//*Soru-7  kullanıcıdan bir yıl ve ay alıyoruz o ayın kaç çektiğini konsola yazdıran kodu yazınız
+
+const yil = 2023;
+const ay = 1;
+
+if (ay == 2) {
+  if (yil % 400 === 0 || (yil % 4 === 0 && yil % 100 !== 0)) {
+    console.log(`${yil} yılını ${ay} ayı 29 çeker.`);
+  } else {
+    console.log(`${yil} yılını ${ay} ayı 28 çeker.`);
+  }
+} else if (
+  ay == 1 ||
+  ay == 3 ||
+  ay == 5 ||
+  ay == 7 ||
+  ay == 8 ||
+  ay == 10 ||
+  ay == 12
+) {
+  console.log(`${yil} yılını ${ay} ayı 31 çeker.`);
+} else if (ay == 4 || ay == 6 || ay == 9 || ay == 11) {
+  console.log(`${yil} yılını ${ay} ayı 30 çeker.`);
 }
