@@ -126,25 +126,49 @@
 
 //*Soru-7  kullanıcıdan bir yıl ve ay alıyoruz o ayın kaç çektiğini konsola yazdıran kodu yazınız
 
-const yil = 2023;
-const ay = 1;
+// const yil = 2023;
+// const ay = 1;
 
-if (ay == 2) {
-  if (yil % 400 === 0 || (yil % 4 === 0 && yil % 100 !== 0)) {
-    console.log(`${yil} yılını ${ay} ayı 29 çeker.`);
-  } else {
-    console.log(`${yil} yılını ${ay} ayı 28 çeker.`);
-  }
-} else if (
-  ay == 1 ||
-  ay == 3 ||
-  ay == 5 ||
-  ay == 7 ||
-  ay == 8 ||
-  ay == 10 ||
-  ay == 12
-) {
-  console.log(`${yil} yılını ${ay} ayı 31 çeker.`);
-} else if (ay == 4 || ay == 6 || ay == 9 || ay == 11) {
-  console.log(`${yil} yılını ${ay} ayı 30 çeker.`);
-}
+// if (ay == 2) {
+//   if (yil % 400 === 0 || (yil % 4 === 0 && yil % 100 !== 0)) {
+//     console.log(`${yil} yılını ${ay} ayı 29 çeker.`);
+//   } else {
+//     console.log(`${yil} yılını ${ay} ayı 28 çeker.`);
+//   }
+// } else if (
+//   ay == 1 ||
+//   ay == 3 ||
+//   ay == 5 ||
+//   ay == 7 ||
+//   ay == 8 ||
+//   ay == 10 ||
+//   ay == 12
+// ) {
+//   console.log(`${yil} yılını ${ay} ayı 31 çeker.`);
+// } else if (ay == 4 || ay == 6 || ay == 9 || ay == 11) {
+//   console.log(`${yil} yılını ${ay} ayı 30 çeker.`);
+// }
+
+//*Soru-8 Dört işlem hesap makinesi
+
+// const num1 = Number(prompt("First Number:"))
+// let operator = prompt("Operator: +,-,*,/:")
+// const num2 = Number(prompt("Second Number:"))
+// let result = 0
+// if (operator === "+") {
+//   result = num1 + num2
+// } else if (operator === "-") {
+//   result = num1 - num2
+// } else if (operator === "*") {
+//   result = num1 * num2
+// } else if (operator === "/") {
+//   result = num1 / num2
+// } else {
+//   console.log("Incorrect operator selection")
+//   operator = null //! Yanlış operatör girilirse operatore null atiyor
+// }
+
+// if (operator) {
+//   //!Eğer operator truty bir değerse sonucu göster, Null gibi falsy ise gösterme
+//   console.log(`${num1} ${operator} ${num2} = ${result}`)
+// }
