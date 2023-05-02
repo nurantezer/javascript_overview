@@ -71,3 +71,46 @@ if (increase) {
         console.log("He or She deserve an increased salary")
 }
 
+//! && çarpma gibi || toplama gibi düşünülebilir
+
+//**************** SWITCH-CASE *******************
+
+console.log("-------------------------------------")
+console.log(" ***** 4 Islem Hesap Makinasi ****** ")
+console.log("-------------------------------------")
+const s1 = Number(prompt("1.Sayiyi Giriniz:"))
+const islem = prompt("Islemi giriniz: +,-,*, /")
+const s2 = +prompt("2.Sayiyi Giriniz:")
+
+let sonuc = 0
+
+switch (islem) {
+  case "+":
+    sonuc = s1 + s2
+    break
+  case "-":
+    sonuc = s1 - s2
+    break
+  case "*":
+    sonuc = s1 * s2
+    break
+  case "/":
+    sonuc = s1 / s2
+    break
+  default:
+    alert("Yanlis islem girisi")
+    break
+}
+console.log(`${s1} ${islem} ${s2} = ${sonuc}`)
+
+//! ODEV2
+//! Clarusway’deki haftalik ders ve etkinlik programinizi,
+//! console’dan girilen gun degerine gore cikti veren kodu
+//! switch-case yapisi ile yaziniz.
+
+//! Program
+//! Pazartesi, Sali ,Çarsamba, Persembe -> InClass
+//! Cuma -> Teamwork
+//! Cumartesi ->  InClass + Workshop
+//! Pazar -> Self-Study
+//! Aksi takdirde -> Yanlis gun girildi.
