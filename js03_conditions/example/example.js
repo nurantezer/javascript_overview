@@ -39,37 +39,68 @@
 //* cuma 5
 //* cumartesi 6
 
-const gün = 2
+// const gün = 2
 
-switch (gün) {
-    case 1:
-        console.log(`pazartes`)
-        break;
-    case 2:
-        console.log(`salı`)
-        break;
-    case 3:
-        console.log(`çarşamba`)
-        break;
-    case 4:
-        console.log(`perşembe`)
-        break;
-    case 5:
-        console.log(`cuma`)
-        break;
-    case 6:
-        console.log(`cumartesi`)
-        break;
-    case 0:
-        console.log(`pazar`)
-        break;
+// switch (gün) {
+//     case 1:
+//         console.log(`pazartes`)
+//         break;
+//     case 2:
+//         console.log(`salı`)
+//         break;
+//     case 3:
+//         console.log(`çarşamba`)
+//         break;
+//     case 4:
+//         console.log(`perşembe`)
+//         break;
+//     case 5:
+//         console.log(`cuma`)
+//         break;
+//     case 6:
+//         console.log(`cumartesi`)
+//         break;
+//     case 0:
+//         console.log(`pazar`)
+//         break;
 
-    default:
-        console.log(`Lütfen doğru bir gün giriniz`)
-        break;
-}
+//     default:
+//         console.log(`Lütfen doğru bir gün giriniz`)
+//         break;
+// }
 
 //? Breakler kodun sırasıyla çalışmasını sağlıyor
+
+//*Soru-5 Bir dersten alınan notun harfini aşağıdaki duruma göre konsola yazdırınız.
+//*90'dan büyükse AA,
+//*80'den büyük yada 90'a eşit ise AB,
+//*70'den büyük yada 80'a eşit ise BB,
+//*60'den büyük yada 70'a eşit ise BC,
+//*50'den büyük yada 60'a eşit ise CC,
+//*40'den büyük yada 50'a eşit ise CD,
+//*30'den büyük yada 40'a eşit ise DD,
+//*30'den küçük yada eşit ise FF,
+
+// const not = 31
+
+// if (not > 100 || not < 0) {
+//     console.log(`Lütfen geçerli bir aralık giriniz`)
+// } else if (not >= 90) {
+//     console.log(`${not} puan AA`)
+// } else if (not >= 80) {
+//     console.log(`${not} puan BB`)
+// } else if (not >= 70) {
+//     console.log(`${not} puan BC`)
+// } else if (not >= 60) {
+//     console.log(`${not} puan CC`)
+// } else if (not >= 50) {
+//     console.log(`${not} puan CD`)
+// } else if (not >= 40) {
+//     console.log(`${not} puan DD`)
+// } else if (not >= 30) {
+//     console.log(`${not} puan FF`)
+// }
+
 
 
 //* Soru-5 Artık yıl sorusu
