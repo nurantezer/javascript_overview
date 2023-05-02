@@ -205,3 +205,8 @@
 // }
 
 
+//*Soru-10 Maasi asgari ucretten az olanlara %50 zam,fazla olanlara ise %10 zam yapmak istiyoruz.
+// const salary = Number(prompt("Please enter your salary"))
+// const minumunWage = 8500
+// const increaseSalary = salary >= minumunWage ? salary * 1.1 : salary * 1.5
+// console.log("Salary:", salary, "Increased Salary:", Math.trunc(increaseSalary))
