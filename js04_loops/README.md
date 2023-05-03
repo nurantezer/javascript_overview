@@ -11,3 +11,23 @@ for(let i = 1 ; i <= 100 ; i++){
     değeri                    miktarı
 }
 
+for (let i = 2; i <10; i++){
+    if(i >= 4 && i <= 7){
+        continue
+    }
+}
+
+for ()  => adet
+while () => tekrar durumu karmaşık bir koşula sahipse mesela kombinin ısıtma derecesi 
+
+WHİLE
+while(koşul) {
+
+}
+
+let count = 1 --for daki gibi sayaç oluşturdum--
+
+while(count<=10){
+    clg(count)
+    count++  --for daki arttırım azaltım miktarı gibi--
+}

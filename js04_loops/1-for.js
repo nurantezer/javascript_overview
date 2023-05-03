@@ -57,7 +57,8 @@ console.log(" **** FOR ****")
 // }
 
 //*47.Satırda ilk bölündüğü sayıyı göstersin diye break verdim.Yoksa mesela sayı
-//*44 4 numaraya tam bölündüğü için 4 kere yazdırırdı.
+//*44 4 numaraya tam bölündüğü için 4 kere yazdırırdı.--Diğer yöntemleri incele--
+
 
 
 
