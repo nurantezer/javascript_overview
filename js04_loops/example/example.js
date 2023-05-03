@@ -160,3 +160,16 @@
 
 // console.log(`Avarage: ${avarage / n}`)
 
+//*Soru-11 Console'dan girilen taban ve pozitif us degerlerine gore
+//* uslu sayi sonucunu hesaplayan kodu for veya while dongusu ile yaziniz.
+
+const num = Number(prompt("Please enter the num:"))
+const pow = Number(prompt("Please enter the positive power:"))
+let result = 1
+
+for (let i = 0; i < pow; i++) {
+  result *= num
+}
+
+console.log(`${num}^${pow} = ${result}`)
+
