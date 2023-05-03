@@ -12,6 +12,7 @@ for (let row = 1; row <= 10; row++) {
         line += result + "\t "  //? \t : bir tab bosluk ekle
     }
     line += "\n"    //? \n : yeni bir satira gec
+    console.log(line)
 }
 
 console.log(line)
