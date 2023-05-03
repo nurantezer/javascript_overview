@@ -68,7 +68,7 @@ again = prompt("Do you want to continue (e/E)")
 } while (again === "e" || again === "E")
 console.log("See you later. Bye")
 
-//*while yazılan do-while ın dışı kabul ediliyor
+//*while'e yazılan do-while ın dışı kabul ediliyor
 
 
 
