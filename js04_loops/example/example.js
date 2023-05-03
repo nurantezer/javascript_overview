@@ -96,22 +96,38 @@
 
 //*Soru-7 Kullanıcıdan alınan n adet kadar olan Fibonacci dizisini konsola yazdırınız ?  //0 1 1 2 3 5 8 13
 
-let n = Number(prompt('Sayı giriniz'))
-let n1 = 0
-let n2 = 1
-let count = 2
-let n3
-let result = ''
-result += n1
-result += ' ' + n2
-for (let i = 2; i < n; i++) {
-  n3 = n1 + n2
-  result += ' ' + n3
-  n1 = n2
-  n2 = n3
-  count++
+// let n = Number(prompt('Sayı giriniz'))
+// let n1 = 0
+// let n2 = 1
+// let count = 2
+// let n3
+// let result = ''
+// result += n1
+// result += ' ' + n2
+// for (let i = 2; i < n; i++) {
+//   n3 = n1 + n2
+//   result += ' ' + n3
+//   n1 = n2
+//   n2 = n3
+//   count++
+// }
+
+// console.log(result)
+
+//*Soru-8 Aşağıdaki çıktıyı konsola yazdırınız ?
+// O
+// OO
+// OOO
+// OOOO
+// OOOOO
+// OOOOOO
+// OOOOOOO
+let str = ''
+for (let i = 1; i <= 7; i++) {
+  for (let j = 1; j <= i; j++) {
+    str += 'O'
+  }
+  str += '\n'
 }
-
-console.log(result)
-
+console.log(str)
 
