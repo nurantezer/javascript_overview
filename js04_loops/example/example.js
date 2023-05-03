@@ -20,3 +20,30 @@
 
 // console.log(sum/5)
 
+//*Soru-3 Kullanıcıdan alınan sayıları negatif girilene kadar
+//*toplayan ve konsola yazdıran kodu yazınız.
+
+// let sum = 0;
+// let flag = true;
+
+// while (flag) {
+//   const sayi = +prompt("bir sayi giriniz");
+//   if (sayi < 0) {
+//     flag = false;
+//   } else {
+//     sum += sayi;
+//   }
+// }
+// console.log(sum);
+
+// let sum = 0
+// while (true) {
+//     const sayi = +prompt("bir sayi giriniz")
+
+//     if (sayi < 0) {
+//         break
+//     }
+//     sum += sayi
+// }
+
+// console.log(sum)
