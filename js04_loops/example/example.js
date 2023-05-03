@@ -47,3 +47,19 @@
 // }
 
 // console.log(sum)
+
+//* Soru-4 Sizden 1'den 100'e kadar sayıları yazdırmanız istenmektedir
+//*Ancak 3'ün katlarına gelince "fizz", 5'in katlarına gelince "buzz"
+//*Hem 3'ün hemde 5'in katlarına gelince "fizzbuzz" yazdırmanız istenmektedir.
+
+for (let i = 1; i < 100; i++) {
+  if (i % 15 === 0) {
+    console.log("fizzbuzz");
+  } else if (i % 5 === 0) {
+    console.log("buzz");
+  } else if (i % 3 === 0) {
+    console.log("fizz");
+  } else {
+    console.log(i);
+  }
+}
