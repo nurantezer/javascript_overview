@@ -33,7 +33,10 @@ while(count<=10){
 }
 
 while(a>b && c>d){
-    
+
 }
 
 DRY => Dont repeat yourself --kodların tekrarını mümkün mertebe azaltmak istiyoruz
+
+DO-WHİLE
+-Döngü içerisinde kodun en az bir kere çalışması garanti edilir.Koşul yanlış ise bile bir kere çalışır.While de falsy de çalışmaz. Uygulamanın sonunda mesela confirm koymak burada mantıklı olur.

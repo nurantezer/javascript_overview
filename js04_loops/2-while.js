@@ -40,8 +40,36 @@ let number = Number(prompt("your number:"))
 
 while (number != 0) {
   number = Math.trunc(number / 10)
-  console.log(number)
+  console.log(number) //*debug
   counter++
 }
 //*trunc negatifte de çalışıyor
 console.log(`Digit count is : ${counter}`)
+
+
+// * ============================================
+// *         DONGULER(LOOPS)- DO-WHILE
+// * ============================================
+
+//? ORNEK: Kullanicidan  Vize ve Final notlarini isteyen ve
+//? vize'nin %40 + final'in %60 alarak gecme notunu hesaplayan programi
+//? yaziniz. Program her hesaplamadan sonra tekrar hesaplama yapilmak
+//? istenip istenmedigini soracak cevap 'e' veya 'E' ise yeniden not
+//? isteyecek ve islemleri tekrar edecektir.
+
+let again = ""
+do {
+  let avg = 0  //ortalama
+const midterm = Number(prompt("your midterm grade:"))
+const final = Number(prompt("your final grade:"))
+avg = midterm * 0.4 + final * 0.6
+console.log(`Your Score is ${avg}`)
+again = prompt("Do you want to continue (e/E)")
+} while (again === "e" || again === "E")
+console.log("See you later. Bye")
+
+//*while yazılan do-while ın dışı kabul ediliyor
+
+
+
+
