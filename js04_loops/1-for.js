@@ -34,23 +34,30 @@ console.log(" **** FOR ****")
 //? ÖRNEK: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
 //? for dongulerini kullanarak yaziniz.
 
-const primeNum = Number(prompt("Enter a number"))
+// const primeNum = Number(prompt("Enter a number"))
 
-let isPrime = true
+//? Flag method
+// let isPrime = true
 
-if (primeNum < 2) {
-    console.log("Number shoul be bigger than 1")
-} else {
-    for (let i = 2; i < primeNum; i++){
-    if (primeNum % i === 0) {
-         //? tam bölünüyorsa asal değildir
-        console.log(`${primeNum} is not a prime number`)
-        isPrime = false
-      }    
-    }
-    
-    if (isPrime === true) {
-    console.log(`${primeNum} is a prime number`)
-  }
-}
+// if (primeNum < 2) {
+//     console.log("Number shoul be bigger than 1")
+// } else {
+//     for (let i = 2; i < primeNum; i++){
+//     if (primeNum % i === 0) {
+//          //? tam bölünüyorsa asal değildir
+//         console.log(`${primeNum} is not a prime number - ${i}`)
+//         isPrime = false
+//         break
+//       }
+//     }
+
+//     if (isPrime === true) {
+//     console.log(`${primeNum} is a prime number`)
+//   }
+// }
+
+//*47.Satırda ilk bölündüğü sayıyı göstersin diye break verdim.Yoksa mesela sayı
+//*44 4 numaraya tam bölündüğü için 4 kere yazdırırdı.
+
+
 
