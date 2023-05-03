@@ -40,3 +40,16 @@ DRY => Dont repeat yourself --kodların tekrarını mümkün mertebe azaltmak is
 
 DO-WHİLE
 -Döngü içerisinde kodun en az bir kere çalışması garanti edilir.Koşul yanlış ise bile bir kere çalışır.While de falsy de çalışmaz. Uygulamanın sonunda mesela confirm koymak burada mantıklı olur.
+
+NESTED LOOPS
+
+for(let i = 0; i<3; i++) {
+    for(let j = 0; j<2; j++){
+
+    }
+}
+
+rgb 8 8 8
+                  1
+                 1  2  1
+                  
