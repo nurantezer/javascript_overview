@@ -52,14 +52,31 @@
 //*Ancak 3'ün katlarına gelince "fizz", 5'in katlarına gelince "buzz"
 //*Hem 3'ün hemde 5'in katlarına gelince "fizzbuzz" yazdırmanız istenmektedir.
 
-for (let i = 1; i < 100; i++) {
-  if (i % 15 === 0) {
-    console.log("fizzbuzz");
-  } else if (i % 5 === 0) {
-    console.log("buzz");
-  } else if (i % 3 === 0) {
-    console.log("fizz");
-  } else {
-    console.log(i);
-  }
-}
+// for (let i = 1; i < 100; i++) {
+//   if (i % 15 === 0) {
+//     console.log("fizzbuzz");
+//   } else if (i % 5 === 0) {
+//     console.log("buzz");
+//   } else if (i % 3 === 0) {
+//     console.log("fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+//*Soru -5 bir sayının (number) basamak sayısını yazdıran kodu yazınız.
+
+// let sayi = 123456789;
+// let basamak = 0;
+
+// while (true) {
+//   sayi = Math.floor(sayi / 10);
+//   basamak++;
+//   if (sayi === 0) {
+//     break;
+//   }
+// }
+// console.log(basamak);
+
+
+
