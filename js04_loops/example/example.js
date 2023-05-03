@@ -64,7 +64,7 @@
 //   }
 // }
 
-//*Soru -5 bir sayının (number) basamak sayısını yazdıran kodu yazınız.
+//*Soru-5 bir sayının (number) basamak sayısını yazdıran kodu yazınız.
 
 // let sayi = 123456789;
 // let basamak = 0;
@@ -78,5 +78,20 @@
 // }
 // console.log(basamak);
 
+//*Soru-6
+// *****
+// *****
+// *****
+// *****
+// *****
+
+let result = "";
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    result += "*";
+  }
+  result += "\n";
+}
+console.log(result);
 
 
