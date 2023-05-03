@@ -149,3 +149,14 @@
 // }
 // console.log(str)
 
+//*Soru-10 Console'dan girilen sayilarin ortalamasini bulan programi yaziniz. Program ilk olarak kullanicidan kac tane sayi gireceginin almali bu bilgi isiginda girilen sayilarin ortalmasini hesaplayarak yazdirmalidir.
+// const n = Number(prompt("How many number will be inputted:"))
+// let avarage
+
+// for (let i = 1; i <= n; i++) {
+//   const number = Number(prompt(`Please enter ${i}. number:`))
+//   avarage += number
+// }
+
+// console.log(`Avarage: ${avarage / n}`)
+
