@@ -18,7 +18,7 @@ compiler tabanlı kodun tamamını derliyor.Maikne koduna çeviriyor(exe, dmg) B
 
 --Masaüstü tasarımı elektron kütüphanesi ile macos, windows, linux için uygulama geliştirme. whatsappp, slack, VSCode mesela.
 
-                                                 ***JS Tarihi ve Sürümleri***
+                                                 *** JS Tarihi ve Sürümleri ***
 
 -- 1995 te 10 günde geliştirildi(Brendan Eich -nsecape ve mozilla çalışanı). O zamanki adı mochaydı. Sun microsistem markası lisansını aldıktan sonra adı LiveScript oldu. Sun kendi geliştirdiği java dilinin populerliğinden faydalanmak için adını JavaScript yaptılar.
 
