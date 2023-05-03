@@ -5,7 +5,7 @@
 
 -- Nesene-Yöenelimli(OOP) bilgisayar dillerinde kullanılan karmaşık bir konsepti. Js destekliyor. Herşeyi sıfırdan yazma değilde bir temel üzerinde. Eskiden para tek tek oyarak işleniyordu, şimdi seri üretim ve bir kalıplar var. Temel bass classları oluşturmak. Bu özellik sonradan geldi jsnin asıl amacı browserlarda desteklenen bir dil oluşturmaktır.
 
--- Yorumlayıcı : Interpreter ve compile yüksek seviyeli dilleri makine diline çeviriyor.
+- Yorumlayıcı : Interpreter ve compile yüksek seviyeli dilleri makine diline çeviriyor.
 ınterpreter komutları tek tek alır tek tek sunar.Hata satıra geldiğinde anlaşılıyor.Hata olan yerde duruyor devam etmiyor.Js burda. Kodların tamamını veriyor. compiler olsaydı her siteyi kurmamız gerekirdi.
 
 compiler tabanlı kodun tamamını derliyor.Maikne koduna çeviriyor(exe, dmg) Bilgisayar oyunları mesela komple indiriyor. Binary kodlarını veriyor.
