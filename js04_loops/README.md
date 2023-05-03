@@ -31,3 +31,9 @@ while(count<=10){
     clg(count)
     count++  --for daki arttırım azaltım miktarı gibi--
 }
+
+while(a>b && c>d){
+    
+}
+
+DRY => Dont repeat yourself --kodların tekrarını mümkün mertebe azaltmak istiyoruz
