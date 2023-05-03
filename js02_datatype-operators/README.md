@@ -1,5 +1,5 @@
-y++ önce kullan sonra arttır
-++y önce arttır sonra kullan
+- y++ önce kullan sonra arttır
+- ++y önce arttır sonra kullan
 
 y = 5
 clg(++y) 6

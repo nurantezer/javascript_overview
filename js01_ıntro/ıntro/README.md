@@ -1,4 +1,4 @@
-                                                       ****JAVASCRIPT****
+                                                       **** JAVASCRIPT ****
 - Javascript yüksek-seviyeli, nesne-yöenlimli, yorumlayıcı tabanlı ve dinamik bir dil.
 
 - Yüksek Seviye: Binary-Asambly-Yüksek seviyei diller gelişim bu şekilde.İlk ikisi bilgisayarın anlayacağı formatta, yüksek seviyeli bizim anlayacağımız. if gibi go gibi mesela.
