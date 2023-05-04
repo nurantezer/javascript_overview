@@ -46,3 +46,4 @@ cont func = () => {
 }
 func()   recursif = Bir fonksiyonun kendisini çağırması if else ile kısıtlıyoruz.Bizim işimizi kolaylaştırıyor.Hanoi,sıralama algoritmaları(4,3,1,5,4  quick sort) bunlarda recursif olduğu için kodlamak kolay.Matematikteki karmaşık kendi kendini çağıran fonksiyonları yazmayı basitleştirdiği için kullanıyoruz.Bilgisayarın içini zorlaştırıyor.
 - ctrl z mesela stackte tutuluyor yoksa stack owerflova düşüp bellek dolu diyebilir.
+- LIFO: Last input first output stackte işlem sırası böyle (dolmuş-para)
