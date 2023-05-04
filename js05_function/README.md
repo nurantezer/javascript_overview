@@ -40,3 +40,9 @@ const volume = (r, h = 1) => Math.PI * r * r * h   h 'ı girmek istemezsem diye 
 Fibonanci
 1      1       2
 fib1 + fib2 = sum
+- Recursive
+cont func = () => {
+    func()     burada sonsuz döngü oldu
+}
+func()   recursif = Bir fonksiyonun kendisini çağırması if else ile kısıtlıyoruz.Bizim işimizi kolaylaştırıyor.Hanoi,sıralama algoritmaları(4,3,1,5,4  quick sort) bunlarda recursif olduğu için kodlamak kolay.Matematikteki karmaşık kendi kendini çağıran fonksiyonları yazmayı basitleştirdiği için kullanıyoruz.Bilgisayarın içini zorlaştırıyor.
+- ctrl z mesela stackte tutuluyor yoksa stack owerflova düşüp bellek dolu diyebilir.
