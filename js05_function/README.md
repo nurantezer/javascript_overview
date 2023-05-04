@@ -28,3 +28,11 @@ const topla = function(num1,num2){
 clg(topla(5,7))
 Modern js ile geldi.
 
+- 3 Arrow Function
+- Js'ye ES6 ile geldi. Otamatik return
+const topla = (a,b) => a+b  --Single Statement-- süslü ve return yok
+
+let selamVer = () => alert("Merhaba Arkadaşlar")
+selamVer()      boş      clg(selamVer()) -> bu undefined gelir çünkü
+                          boş (void function)
+const volume = (r, h = 1) => Math.PI * r * r * h   h 'ı girmek istemezsem diye default parametre atadım
