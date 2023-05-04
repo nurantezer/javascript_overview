@@ -76,6 +76,9 @@ console.log(calculate("Rose", 1990))
 //? Console'dan girilen bir sayinin tek veya cift olddgunu
 //? hesaplayan ve sonucu ana programa donduren kodu fonksiyonlar
 //? ile yaziniz.
+console.log(oddOrEven(77))//*expressionda bunu yapamıyoruz.Fonksiyon belleğin bir
+//*yerine atılıyor ce sürekli alan kaplıyor. Expressionda böyle değil.
+//*Daha efektif kullanım sağlıyor.
 
 function oddOrEven(num) {
     return num % 2 ? "ODD" : "EVEN" 

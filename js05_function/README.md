@@ -3,7 +3,7 @@
 - Büyük görevleri alt görevlere bölüyor.
 - declaration => calling-invoking.
 - RAM e geliyor o da stack alanında saklıyor.
-- 1. Function Declaration
+- 1 Function Declaration
 function topla(argüman/parametre listesi){
                                                  deklarasyon kısmı
 }
@@ -18,4 +18,13 @@ funciton topla(s1, s2) {
 }
 - return olmazsa çağırdığımda undifened verir.
 const x = topla(2,3) Programın alt taraflarında x'i istediğim gibi kullanabilirim.
+
+- 2 Function Expression
+İsimsizdir(anonymous) ve bir değişkene atanırlar. Dolayısıyla fonksiyonun bir dönüş değeri olmalıdır.
+
+const topla = function(num1,num2){
+    return num1+num2
+}
+clg(topla(5,7))
+Modern js ile geldi.
 
