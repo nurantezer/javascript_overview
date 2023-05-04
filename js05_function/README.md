@@ -36,3 +36,7 @@ let selamVer = () => alert("Merhaba Arkadaşlar")
 selamVer()      boş      clg(selamVer()) -> bu undefined gelir çünkü
                           boş (void function)
 const volume = (r, h = 1) => Math.PI * r * r * h   h 'ı girmek istemezsem diye default parametre atadım
+
+Fibonanci
+1      1       2
+fib1 + fib2 = sum

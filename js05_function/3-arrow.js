@@ -55,3 +55,29 @@ console.log("AGE:", calculateAge(1990))
 // fibo(6) => 8
 //? fibo(n) = fibo(n-1) + fibo(n-2)
 
+
+const fibo = (n) => {
+    let fib1 = 1
+    let fib2 = 1
+    let sum = 0
+
+    for (let i = 2; i < n; i++){
+        sum = fib1 + fib2
+        fib1 = fib2   //*kaydırarak toplamak için 
+        fib2 = sum   //*kaydırarak toplamak için 
+
+    }
+
+    return fib2
+}
+
+
+const n = +prompt("Please enter n:")
+if (n <= 0) {
+    console.log("n should be bigger than zero")
+} else {
+    console.log(`FIBONACCI(${n}) = ${fibo(n)}`)
+}
+
+//*n-2 kere toplama yapmak
+
