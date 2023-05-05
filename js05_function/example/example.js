@@ -86,3 +86,13 @@ function sumOfDivisors(number) {
   return sum
 }
 console.log(sumOfDivisors(5))
+
+//*Soru-6 Belirli bir sayının faktöriyelini bulan fonksiyonu yazınız
+
+function factorial(number) {
+  if (number === 1) {
+    return 1
+  }
+  return number * factorial(number - 1)
+}
+console.log(factorial(5))
