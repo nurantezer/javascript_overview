@@ -17,24 +17,25 @@ printHello() //! invoke, call
 //* ORNEK2:
 //*****************************************/
 
-// function greet(firstName, lastName) {
-//     console.log(`Hi, ${firstName} ${lastName}`)
-// }
+function greet(firstName, lastName) {
+    console.log(`Hi, ${firstName} ${lastName}`)
+}
 
-// //? invoke examples
-// greet("Sabata", "2288")
-// greet("Sercan", 'Yılmaz')
-// greet("Nuran", "Tezer")
+//? invoke examples
+greet("Sabata", "2288")
+greet("Sercan", 'Yılmaz')
+greet("Nuran", "Tezer")
 
-// const name = prompt("your name:")
-// const surname = prompt("your surname")
-// greet(name, surname)  //*pass by value değişkenin isminin bir önemi yok
-//                       //*önemli olan value
-// //? js de fonksiyonlar parameterlere degiskenleri degil onlarin degerlerinin aktarir.
-// // !greet(lastName, firstName)
+const firstName = prompt("Your name:")
+const lastName = prompt("Your surname:")
+greet(firstName, lastName)
+//? js de fonksiyonlar parameterlere degiskenleri degil onlarin degerlerinin aktarir.
 
-// greet("Ahmet")
-// greet("Mehmet")
+//*pass by value değişkenin isminin bir önemi yok önemli olan value
+
+
+greet("Ahmet")
+greet("Mehmet")
 
 // //! Bir parametreyi cagirma sirasinda kullanmaz isek onun
 // //! yerine default parametre atayabiliriz. Ornekteki lastName
@@ -46,12 +47,12 @@ printHello() //! invoke, call
 //* ORNEK3:
 //******************************************/
 
-// function calculate(name, yob) {
-//     const age = new Date().getFullYear() - yob
-//     console.log(`${name}'s age is ${age}`)
-// }
+function calculate(name, yob) {
+    const age = new Date().getFullYear() - yob
+    console.log(`${name}'s age is ${age}`)
+}
 
-// calculate("elif", 2000)
+calculate("elif", 2000)
 
 
 function calculate(name, yob) {
@@ -59,17 +60,16 @@ function calculate(name, yob) {
     return`${name}'s age is ${age}`
 }
 //*return dedim ama bana direk birşey döndürmüyor niye çünkü bir
-//*bir değişkene atayıp yazmadım.64,65 satırdaki gibi yazdırabilirim.
-
-//? Ornek olmasi icin yazildi. return programdan ana programa dönmesi
-// function x(s1, s2) {
-//   return (s1 + s2) / (s1 * s2)
-// }
+//*bir değişkene atayıp yazmadım.65,66 satırdaki gibi yazdırabilirim.
 
 const elif = calculate("elif", 2000)
 console.log(elif)
 console.log(calculate("Rose", 1990))
 
+//? Ornek olmasi icin yazildi. return programdan ana programa dönmesi
+// function x(s1, s2) {
+//   return (s1 + s2) / (s1 * s2)
+// }
 //* ORNEK4:
 //*******************************************/
 
@@ -77,7 +77,7 @@ console.log(calculate("Rose", 1990))
 //? hesaplayan ve sonucu ana programa donduren kodu fonksiyonlar
 //? ile yaziniz.
 console.log(oddOrEven(77))//*expressionda bunu yapamıyoruz.Fonksiyon belleğin bir
-//*yerine atılıyor ce sürekli alan kaplıyor. Expressionda böyle değil.
+//*yerine atılıyor ve sürekli alan kaplıyor. Expressionda böyle değil.
 //*Daha efektif kullanım sağlıyor.
 
 function oddOrEven(num) {
