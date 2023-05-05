@@ -48,5 +48,16 @@ console.log(word2.startsWith("sa"))//false
 console.log(word2.startsWith("sa", 7))//true
 console.log(word2.endsWith(`!`))//true
 
+//!replace(searchFor, replaceWith) -- immutable
+//*let oku = `Oku bBaban gibi ,saf olma`;
+//* oku = oku.replace(`saf olma`,`akıllı ol`) let ile yeniden atama yapıp değiştirebilirim.
+let oku = "Oku Baban gibi, saf olma"
+console.log(oku.replace("saf olma", `akıllı ol`))//Oku Baban gibi, akıllı ol
+oku = oku.replace(`saf olma`, `akilli ol`)
+console.log(oku)//Oku Baban gibi, akilli ol
+
+//*detaylı değiştirme alternatifleri için regex kullanılabilir
+console.log(oku.replace(/AKILLI/i, `Zeki`))//Oku Baban gibi, Zeki ol
+
 
 
