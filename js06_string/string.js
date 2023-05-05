@@ -71,5 +71,20 @@ console.log(sliced, typeof sliced)//gündüz gece.. string
 console.log(veysel.slice(17, 30))//dayım yürüyor
 console.log(veysel.slice(-10))//düz gece..  -1den başlıyor
 //*substring negatif index kullanmaz.
-console.log(veysel.substring(17,30))//dayım yürüyor
+console.log(veysel.substring(17, 30))//dayım yürüyor
 
+//!split([sep [,limit]])
+const tarkan = "gel gündüzle gece olalım"
+const splited = tarkan.split(` `)
+console.log(splited, typeof splited)//Boşluklara göre ayırdı ve arraya çevirdi
+// (4) ['gel', 'gündüzle', 'gece', 'olalım'] 'object'
+const gece = splited[2]
+console.log(gece)//gece indisleme ile değer okunabilir
+
+const chars = tarkan.split('')
+console.log(chars)// null karakterine göre harfleri ayırarak bir char
+//dizisi oluşturdu (24) ['g', 'e', 'l', ' ', 'g', 'ü', 'n', 'd', 'ü', 'z', 'l', 'e', ' ', 'g', 'e', 'c', 'e', ' ', 'o', 'l', 'a', 'l', 'ı', 'm']
+
+const copyTarkan = tarkan.split()
+console.log(copyTarkan)//string'i tek elemanlı array haline getirdi.
+//['gel gündüzle gece olalım']
