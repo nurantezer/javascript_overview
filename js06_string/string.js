@@ -28,10 +28,17 @@ console.log(s3.charAt())//0.indexi getirdi -h-
 console.log(s3.charAt(4))//o
 console.log(s3.charAt(s3.length - 1))//d
 
-//!includes()- case sensetive
+//!includes() - case sensetive
 const word = "to be or not to be, this is the question"
 console.log(word.includes("to be"))//true
 console.log(word.includes("That"))//false
 console.log(word.includes(""))//true
 console.log(word.includes(`to be`, 13))//true 13ten sonra to be
+
+//!indexOf() lastIndexOf() - case sensetive
+const tobeIndex = word.indexOf(`or`) 
+console.log(tobeIndex)//6
+console.log(word.indexOf(`be`))//baş -3-
+console.log(word.lastIndexOf(`be`))//en son 16
+console.log(word.lastIndexOf(`BE`))//-1 bulamadığı zaman döndürüyor
 
