@@ -59,5 +59,17 @@ console.log(oku)//Oku Baban gibi, akilli ol
 //*detaylı değiştirme alternatifleri için regex kullanılabilir
 console.log(oku.replace(/AKILLI/i, `Zeki`))//Oku Baban gibi, Zeki ol
 
+//!slice(beginIndex[, endIndex])
+//!substring(beginIndex,[, endIndex])
+//!substr(depreaced)
+//!bunlarda immutable
 
+const veysel = "Uzun ince bir yoldayım yürüyorum gündüz gece.."
+const sliced = veysel.slice(33)
+console.log(sliced, typeof sliced)//gündüz gece.. string
+
+console.log(veysel.slice(17, 30))//dayım yürüyor
+console.log(veysel.slice(-10))//düz gece..  -1den başlıyor
+//*substring negatif index kullanmaz.
+console.log(veysel.substring(17,30))//dayım yürüyor
 
