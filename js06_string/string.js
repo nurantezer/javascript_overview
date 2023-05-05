@@ -88,3 +88,8 @@ console.log(chars)// null karakterine göre harfleri ayırarak bir char
 const copyTarkan = tarkan.split()
 console.log(copyTarkan)//string'i tek elemanlı array haline getirdi.
 //['gel gündüzle gece olalım']
+
+//!trim()
+const ramazan = "       Hoş geldin ya şehri Ramazan"
+console.log(ramazan.length)//34
+console.log(ramazan.trim().length)//27 boşlukları kaldırdı.
