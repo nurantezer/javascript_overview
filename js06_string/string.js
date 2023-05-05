@@ -42,3 +42,11 @@ console.log(word.indexOf(`be`))//baş -3-
 console.log(word.lastIndexOf(`be`))//en son 16
 console.log(word.lastIndexOf(`BE`))//-1 bulamadığı zaman döndürüyor
 
+//!startWith(), endWith() - case sensetive
+const word2 = "Salına salına sinsice :!"
+console.log(word2.startsWith("sa"))//false
+console.log(word2.startsWith("sa", 7))//true
+console.log(word2.endsWith(`!`))//true
+
+
+
