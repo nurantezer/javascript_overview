@@ -23,3 +23,8 @@ console.log(s3) //helloworld
 console.log(s3.concat("clarusway", str2, "merhaba"))//helloworldclarusway hellomerhaba
 console.log(s2, s3)
 
+//!charAt
+console.log(s3.charAt())//0.indexi getirdi -h-
+console.log(s3.charAt(4))//o
+console.log(s3.charAt(s3.length - 1))//d
+
