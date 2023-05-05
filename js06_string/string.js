@@ -28,3 +28,10 @@ console.log(s3.charAt())//0.indexi getirdi -h-
 console.log(s3.charAt(4))//o
 console.log(s3.charAt(s3.length - 1))//d
 
+//!includes()- case sensetive
+const word = "to be or not to be, this is the question"
+console.log(word.includes("to be"))//true
+console.log(word.includes("That"))//false
+console.log(word.includes(""))//true
+console.log(word.includes(`to be`, 13))//true 13ten sonra to be
+
