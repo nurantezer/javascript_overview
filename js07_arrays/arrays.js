@@ -71,3 +71,44 @@ console.log(lastEl)// rose
 console.log(names1.at(-1))
 console.log(names1.at(-2))
 
+//!  Diziye veri yazma
+//const değiştiremezdi ama stackte değil heapte yaptığımız için izin veriyor
+names1[2] = "Levent"
+// names1[2] = names1[2].toUpperCase()
+//? assigning yapildiginda etki eder.
+console.log(names1)
+
+
+//! Identifier 'names' has already been declared
+// const names = ["ismet", "canan"]
+
+// names = ["ismet", "canan"] //! Assignment to constant variable.Çünkü
+//!adresini değiştirmeye çalışıyorsun.Const adresin değişilmezliğini garanti ediyor
+
+//! NOT: Bir dizi const ile tanimlansada icerisindeki elemanlar
+//! degisitirilebilir. Cunku diziler non-primitive verilerdir.
+//! const ile tanimlanan bir dizinin referansi (baslangic adresini)
+//! stack alaninda tutulurken dizinin elemanlari Heap alaninda tutulur.
+//! Bu yüzden dizinin referansi bilindikten sonra icerisindeki elemanlari
+//! degistirmek mumukundur.
+//! const, sadece dizinin stackte tutulan adresinin degistirilmesini engeller.
+
+//! Diziler farkli veri tiplerini bir arada saklayabilir.
+const ageArr = [22, 44, 55]
+const people = ["John", "Vermont", new Date().getFullYear() - 1990, true, ageArr]
+
+console.log(people)
+
+console.log(people[4])// [22, 44, 55]
+
+console.log(++people[4][1])// 45
+console.log(ageArr)
+ageArr[0]--
+
+console.log(people)// 21
+
+
+//! Bir dizi icerisine baska bir diziyi koyarsak aslinda dizinin
+//! tum verileri kopyalanmaz sadece o dizinin refransi konulur.
+//! Dolayisiyla disarida bu dizideki bir degisikli diger dimizie de yansir.
+//! Cunku JS cogu durumda sig (shallow copying) yapar.

@@ -14,3 +14,5 @@ kisiler[1] stacke gidiyor referans adresini bulup heape gidiyor.
 
 - object wrapper metali suya batırıp altın görünümü aldırmak.Diğer dillerde biz yapıyoruz ama js insiyatif alıp kendisi yapıyor
 - object HZ.Adem classı gibi temel class objecten array (OOP bu)
+
+- arttırma belleği efektif kullanmak için adreslerini bağlıyor
