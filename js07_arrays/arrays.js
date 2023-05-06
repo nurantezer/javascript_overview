@@ -47,3 +47,27 @@ console.log(number2) //?(3) [1, 2, 3]
 const numbers3 = Array.of(5)
 console.log(numbers3) //? [5]
 
+//* Diziden Veri Okuma-Yazma (indisleme)
+//* ----------------------------------------------
+//!  Diziden veri okuma
+
+//? Dizilere erisirken indis(index) yani sira numarasi kullanilir.
+//? indisler 0'dan baslar ve dizinin eleman sayisinin bir eksigine
+//? kadar devam eder.
+//? Syntax => diziAdi[indis]
+
+const names1 = ["emir", "oğuzhan", "levent", "tarık", "Sabata", "Mehtap", "Rose"]
+console.log(names1[1])// oğuzhan
+const tarık = names1[3]
+console.log(tarık)// tarık
+
+//? Dizinin en son elamanını okumak istiyoruz
+console.log(names1[5])  //? hard-code
+
+const lastEl = names1[names1.length - 1]
+console.log(lastEl)// rose
+
+//? Alternatif olarak at() metodu
+console.log(names1.at(-1))
+console.log(names1.at(-2))
+
