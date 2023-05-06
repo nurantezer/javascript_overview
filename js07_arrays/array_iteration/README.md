@@ -18,3 +18,7 @@ Bunlar orjinal diziyi bozmuyor .sort() mutator bozuyor.
 
 - for döngüleri performanslı ama yazımı zor iterasyonun içinde forlar dönüyor.
 
+FOR IN
+for(let i in negatives){ 0 dan başlayacağını biliyor dizinin sonuna kadar gideceğini biliyor
+
+}
