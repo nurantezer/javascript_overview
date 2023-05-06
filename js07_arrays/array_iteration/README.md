@@ -14,3 +14,7 @@ Döngüler ile
 - Array.some()
 - Array.find()
 Bunlar orjinal diziyi bozmuyor .sort() mutator bozuyor.
+
+
+- for döngüleri performanslı ama yazımı zor iterasyonun içinde forlar dönüyor.
+
