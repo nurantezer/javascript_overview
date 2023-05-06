@@ -22,3 +22,10 @@ FOR IN
 for(let i in negatives){ 0 dan başlayacağını biliyor dizinin sonuna kadar gideceğini biliyor
 
 }
+
+for ın array, object
+for of array, object, set, Map
+
+FOR OF
+(let price of prices)
+(let student of students)
