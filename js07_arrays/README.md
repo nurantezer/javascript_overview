@@ -16,3 +16,4 @@ kisiler[1] stacke gidiyor referans adresini bulup heape gidiyor.
 - object HZ.Adem classı gibi temel class objecten array (OOP bu)
 
 - arttırma belleği efektif kullanmak için adreslerini bağlıyor
+developer.mozilla.org   ecmaScript
