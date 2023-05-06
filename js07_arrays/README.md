@@ -17,3 +17,11 @@ kisiler[1] stacke gidiyor referans adresini bulup heape gidiyor.
 
 - arttırma belleği efektif kullanmak için adreslerini bağlıyor
 developer.mozilla.org   ecmaScript
+
+- calback function: Bir fonksiyonu başka bir fonksiyona parametre olarak geçmek
+dizi.sort((a-b) => a-b)
+
+- Sorting algorithm
+buble sort
+insertion sort
+Quick short   Binary Search
