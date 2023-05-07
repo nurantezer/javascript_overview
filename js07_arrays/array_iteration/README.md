@@ -29,3 +29,6 @@ for of array, object, set, Map
 FOR OF
 (let price of prices)
 (let student of students)
+
+FOREACH
+numbers.forEach(callback) yazması kolay. Döngüyü kendininz kıramıyorsunuz.(break, countune) Kendi bitip çıkıyor.Zaman olarak yavaş.
