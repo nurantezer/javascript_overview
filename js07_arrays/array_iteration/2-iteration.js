@@ -44,7 +44,7 @@ console.log(prices)
 //? Bir dizideki tüm isimleri BÜYÜK harfe dönüştüren uygulamayı yazınız.
 let names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayşe", "canan"]
 //n isimler valuelar
-const upperNames = names.map((name) => n.toLocaleUpperCase())
+const upperNames = names.map((name) => name.toLocaleUpperCase())
 
 console.log(upperNames)
 console.log(names)
@@ -69,5 +69,29 @@ console.log(euroPrices, dolarPrices)
 //* =======================================
 //?-------------- ÖRNEK -------------------
 //? Maasi 10000'den buyuk olanlari ayri bir diziye saklayalim
+
 const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000]
 
+const moreThan10000 = salaries.filter((s) => s >= 10000)
+console.log(moreThan10000)
+
+const range = salaries.filter((s) => s >= 6000 && s <= 20000)
+console.log(range)
+
+//* =======================================
+//*          CHAINING (PIPELINE)
+//* =======================================
+//? Maasi 9000'den az olanlara %10 zam yaparak bu degerleri
+//? yeni diziye saklayalim.
+
+const lessThan9000Inc = salaries
+  .filter((s) => s < 9000)
+  .map((s) => Math.trunc(s * 1.1))
+
+console.log(lessThan9000Inc)
+
+salaries
+  .filter((x) => x < 9000)
+  .map((x) => Math.trunc(x * 1.1))
+  .forEach((x) => console.log(x))
+//! ForEach terminal methodudur. Br deger dondurmedigi icin devamına baska fonksiyon getirlemez.
