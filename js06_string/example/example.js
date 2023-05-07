@@ -55,3 +55,18 @@ function name(str) {
     return filt.join("")
 }
 console.log(name(str))
+
+//*Soru-5 Bir JavaScript dizisinde yinelenen değerleri bulan bir JavaScript programı yazın.
+
+//* Examples:
+//* Input: [1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10]
+//* Output: 1, 2, 9
+
+function findDuplicates(arr) {
+    let sortArr = arr.sort()
+    let filt = sortArr.filter((a, i) => a === arr[i + 1])
+    console.log(filt)
+    return filt.join(',')
+}
+
+console.log(findDuplicates([1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10,11,11,12,43,12]))
