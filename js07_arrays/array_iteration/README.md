@@ -35,3 +35,11 @@ numbers.forEach(callback) yazması kolay. Döngüyü kendininz kıramıyorsunuz.
 
 MAP
 - Map diziyi değiştirir(tansformasyon)Orjinal diziyi değiştirmez. Modifiye ettiği diziyi return eder.
+
+REDUCE
+- Bir dizi değil değer döndürür.Toplam çarpım, toplam gibi.
+x.reduce((acc,value) => acc + value,0)
+acc başlangıç değeri defaul 0 dır.Sonuna versek iyi olur.
+
+y.reduce((a,v) => a * v,1) 1 demezsek default olarak 0 alır.
+(a,v,i,arr) alabilir

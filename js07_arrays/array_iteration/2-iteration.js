@@ -94,4 +94,25 @@ salaries
   .filter((x) => x < 9000)
   .map((x) => Math.trunc(x * 1.1))
   .forEach((x) => console.log(x))
-//! ForEach terminal methodudur. Br deger dondurmedigi icin devamına baska fonksiyon getirlemez.
+//! ForEach terminal(bitirici) methodudur. Br deger dondurmedigi icin devamına baska fonksiyon getirlemez.
+
+//* =======================================
+//*             REDUCE METHOD
+//* =======================================
+// const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000]
+
+const totalSalary = salaries.reduce((t, s) => t + s)
+// .forEach((x) => console.log(x)) //! salaries.reduce(...).forEach is not a function
+console.log("TOTAL:", totalSalary)
+//*Bize dizi değil değer döndürür o yüzden froEach almaz.Bu da bir terminal metodu
+
+//? Ornek: Bir Firma, 9000 TL den az olan maaşlara %10 zam yapmak istiyor
+//? ve zam yapılan bu kişilere toplam kaç TL ödeneceğini bilmek istiyor.
+//? İlgili programı yazınız.
+
+const sumOfRaisedSalaries = salaries
+  .filter((s) => s < 9000)
+  .map((s) => s * 1.1)
+  .reduce((t,s) => t + s,0)
+
+console.log(sumOfRaisedSalaries)
