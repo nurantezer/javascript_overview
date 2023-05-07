@@ -36,3 +36,30 @@ prices.forEach((p,i, arr) => {
     arr[i] = Math.trunc(p * 1.1) 
 })
 console.log(prices)
+
+//* =======================================
+//*            MAP METHOD
+//* =======================================
+//?-------------- ÖRNEK -------------------
+//? Bir dizideki tüm isimleri BÜYÜK harfe dönüştüren uygulamayı yazınız.
+let names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayşe", "canan"]
+//n isimler valuelar
+const upperNames = names.map((name) => n.toLocaleUpperCase())
+
+console.log(upperNames)
+console.log(names)
+
+console.log(names.map((name) => name.toLocaleUpperCase()))
+
+//?-------------- ÖRNEK -------------------
+//? tlPrices dizisindeki rakamlarin Euro ve dolar
+//? karsiliklarini hesaplatarak yeni dizelere kaydediniz
+
+const euro = 18.23
+const dolar = 18.19
+const tlPrices = [100, 150, 100, 50, 80]
+
+const euroPrices = tlPrices.map((tl) => Number((tl / euro).toFixed(2)))
+const dolarPrices = tlPrices.map((tl) => Number((tl / dolar).toFixed(2)))
+
+console.log(euroPrices, dolarPrices)

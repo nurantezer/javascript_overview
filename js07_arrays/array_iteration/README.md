@@ -32,3 +32,6 @@ FOR OF
 
 FOREACH
 numbers.forEach(callback) yazması kolay. Döngüyü kendininz kıramıyorsunuz.(break, countune) Kendi bitip çıkıyor.Zaman olarak yavaş.
+
+MAP
+- Map diziyi değiştirir(tansformasyon)Orjinal diziyi değiştirmez. Modifiye ettiği diziyi return eder.
