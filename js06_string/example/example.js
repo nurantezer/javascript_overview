@@ -69,4 +69,16 @@ function findDuplicates(arr) {
     return filt.join(',')
 }
 
-console.log(findDuplicates([1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10,11,11,12,43,12]))
+console.log(findDuplicates([1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10, 11, 11, 12, 43, 12]))
+
+//* Soru-6 Elemanları sayılardan oluşan bir listenin elemanlarının karelerinin toplamını bulan bir JavaScript programı yazın.
+
+//* Examples:
+//* Input: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+//* Output: 285
+
+function sumOfSquares(arr) {
+    return arr.map((a) => a * a).reduce((a,b) => a + b,0)
+}
+
+console.log(sumOfSquares([1, 2, 3, 4, 5, 6, 7, 8, 9])); // 285
