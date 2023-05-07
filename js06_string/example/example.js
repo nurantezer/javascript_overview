@@ -38,3 +38,20 @@ function reverse(num) {
 }
 
 console.log(reverse(sayi))
+
+//*Soru-4 >Verilen bir stringde sesli harfleri filtreleyin ve sadece sesli
+//*harfler olmayan kalan harfleri birleştirin
+//*Example ınput: "day" output :"d" "apple" "pll"
+
+let str = "javascript"
+
+function name(str) {
+    let list = str.split(``)
+    let vowels = `aeıioöuü`
+    console.log(list)
+
+    let filt = list.filter((e) => !vowels.includes(e))
+    console.log(filt)
+    return filt.join("")
+}
+console.log(name(str))
