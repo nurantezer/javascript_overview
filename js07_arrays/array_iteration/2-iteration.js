@@ -32,7 +32,7 @@ console.log(prices.forEach(price => sum += price))//! undefined
 let total = 0
 prices.forEach((p,i, arr) => {
     total += p
-    console.log(`${i + 1}.iteration: {total}`)
+    console.log(`${i + 1}.iteration: {total}`) //genelde 0 dan başlamayız 1den başlamak için + 1 ekledik
     arr[i] = Math.trunc(p * 1.1) 
 })
 console.log(prices)
