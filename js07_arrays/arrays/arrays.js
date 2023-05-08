@@ -72,7 +72,7 @@ console.log(names1.at(-1))
 console.log(names1.at(-2))
 
 //!  Diziye veri yazma
-//const değiştiremezdi ama stackte değil heapte yaptığımız için izin veriyor
+//const değiştirilemezdi ama stackte değil heapte yaptığımız için izin veriyor
 names1[2] = "Levent"
 // names1[2] = names1[2].toUpperCase()
 //? assigning yapildiginda etki eder.

@@ -13,7 +13,7 @@ Stack-oturma odası-     Heap-salon-  referans salonun içindeki belirli koltuğ
 kisiler[1] stacke gidiyor referans adresini bulup heape gidiyor.
 
 - object wrapper metali suya batırıp altın görünümü aldırmak.Diğer dillerde biz yapıyoruz ama js insiyatif alıp kendisi yapıyor
-- object HZ.Adem classı gibi temel class objecten array (OOP bu)
+- object HZ.Adem classı gibi temel class objecten array üretilmiş (OOP bu)
 
 - arttırma belleği efektif kullanmak için adreslerini bağlıyor
 developer.mozilla.org   ecmaScript
