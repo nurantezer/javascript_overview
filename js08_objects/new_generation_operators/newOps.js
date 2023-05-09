@@ -148,5 +148,72 @@ const check = (data) => {
     c: 3,
   }
   
-  check(data)
+check(data)
+  
 
+
+//* ======================================================
+//*  DESTRUCTURING (ARRAY)
+//* ======================================================
+const names = ["Ahmet", "Mehmet", "İsmet", "Saffet"]
+
+//*Classical
+
+const mehmet = names[1] //* indexing
+
+const [p1, p2, , p4] = names
+console.log(p1, p2, p4)
+
+//*======================================================
+//*  REST (...)
+//* ======================================================
+
+//? REST operatoru kullanici tarafindan girilen degerleri dizi
+//? icerisine konumlandirir. Cesitli kullanim alanlari vardir.
+
+//! 1- Bir dizi veya object'deki bazi degerlerden geri kalanlarini
+//!    ayri dizi yada objelere kopyalanmasini saglayabilir.
+
+//* REST: (Arrays)
+const autos = ["anadol", "reno", "bmw", "mercedes", "ferrari"]
+
+const [x, y, ...z] = autos // Destrc.
+console.log(x, y, z)
+
+//* REST: (object)
+const personel = {
+    pName: "john",
+    surname: "smith",
+    job: "developer",
+    age: 30,
+}
+
+const { age, job, ...fullName } = personel
+console.log(age, job)
+console.log(fullName)
+
+const { pName: name } = fullName
+console.log(name)
+
+//! 2- Bir fonksiyonun argumanlarini diziye cevirmek icin kullanilabilir.
+
+const sum = (a, b) => a + b
+//? hata vermez fakat sadece 2 argumani toplar
+console.log("SUM:", sum(2, 4, 6)) 
+
+const sumAll = (...numbers) => {
+    //! bireysel degerleri bir array'e cevirdi.
+    //? non-iterable -> iterable
+    console.log(numbers) //? (4) [2, 4, 6, 8]
+    return numbers.reduce((s, v) => s + v, 0)
+  }
+
+console.log("SUM:", sumAll(2, 4, 6, 8)) 
+
+const showName = (name, surname, ...titles) => {
+    console.log(titles)
+    const summary = `${name} ${surname} is a ${titles.join(" and ")}`
+    console.log(summary)
+  }
+  
+  showName("Noah", "Adams", "Developer", "Instr", "Professor", "Dad")
