@@ -76,7 +76,7 @@ console.log(worker)
 
 worker["languages"].forEach((lang) => console.log(lang))
 
-const upperCaseLangs = worker["languages"].map((lang) => l.toUpperCase())
+const upperCaseLangs = worker["languages"].map((lang) => lang.toUpperCase())
 console.log(upperCaseLangs)
 
 //? yeni bir property ve value eklenebilir.
@@ -127,3 +127,100 @@ console.log("AGE:",personel.calculateAge())
 console.log(personel.dob)
 console.log("AGE:", personel.calculateAge())
 console.log(personel.summary())
+
+//? nested
+const people = {
+    person1: {
+      name: "Can",
+      surname: "Canan",
+      dob: "1990",
+      job: "developer",
+      salary: "140000",
+      drivingLicense: true,
+    },
+    person2: {
+      name: "John",
+      surname: "Sweet",
+      dob: "1990",
+      job: "tester",
+      salary: "110000",
+      drivingLicense: false,
+    },
+    person3: {
+      name: "Steve",
+      surname: "Job",
+      dob: "2000",
+      job: "developer",
+      salary: "90000",
+      drivingLicense: true,
+    },
+    person4: "JS",
+  }
+  
+  //! ASSIGMENT
+  //? person2'nin adini ve maasini yazdiriniz.
+  console.log(people)
+  console.log(people.person2.name)
+  console.log(people.person2.salary)
+
+  //? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
+  //! FOR - IN
+//* for (key in object) {
+//*   // code block to be executed
+//* }
+// ;("strict")
+
+for (let person in people) {
+    console.log(person)
+    console.log(people[person].salary)//bunlar person1 person2 person değil direk
+    console.log(people[person].name)
+}
+
+//! FOR - OF
+//* for (x of iterable) {
+//*   code block to be executed
+//* }
+
+//? Object methods
+console.log(Object.keys(people))
+console.log(Object.values(people))
+console.log(Object.entries(people))
+
+for (let key of Object.keys(people)) {
+    console.log(key)
+}
+
+for (let v of Object.values(people)) {
+    console.log(v)
+}
+
+for (let [k,v] of Object.entries(people)) {
+    console.log("KEY:", k, "VALUE:", v.job)
+}
+
+//! ARRAY METOTLARI ILE
+console.log("*********")
+Object.keys(people).forEach((p) => console.log(p))
+console.log("*********")
+
+Object.values(people).forEach((p) => console.log(p.name))
+
+//? Javascript'de Objeler default olarak iterable degildir.
+//? Ama for in ve for of donguleri ile itere edilebilirler.
+
+//? Objelerin key ve value'larini okumak icin built-in metotlar vardir.
+//? Bu mettotlar aslinda objelerin key ve/veya value'lari bir dizi olarak dondurur.
+
+//? job'i developer olanlarin dob degerlerini yazdiriniz.
+console.log("*****")
+
+Object.values(people)
+  .filter((p) => p.job === "developer")
+  .forEach((p) => console.log(p.dob))
+
+console.log("*****")
+const dobs = Object.values(people)
+  .filter((p) => p.job === "developer")
+  .map((p) => p.dob) //? (2) ['1990', '2000']
+
+console.log(dobs)
