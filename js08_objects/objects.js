@@ -214,6 +214,8 @@ Object.values(people).forEach((p) => console.log(p.name))
 //? job'i developer olanlarin dob degerlerini yazdiriniz.
 console.log("*****")
 
+// const devs = Object.values(people).filter((p) => p.job === "developer")
+//console.log(devs)
 Object.values(people)
   .filter((p) => p.job === "developer")
   .forEach((p) => console.log(p.dob))
