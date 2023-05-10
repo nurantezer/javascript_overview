@@ -150,3 +150,7 @@ console.log(newList)
 
 const newList1 = carData.reduce((acc, cur) => acc + cur.mileage, 0)
 console.log(newList1 / carData.length)
+
+//*Soru-4 8 silindirli araçları listele
+const eightCylinderCars = carData.filter((car) => car.engine.cylinders === 8);
+console.log(eightCylinderCars);
