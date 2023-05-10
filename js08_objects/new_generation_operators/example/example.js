@@ -184,3 +184,31 @@ function reverseDict(obj) {
   return newObj;
 }
 console.log(reverseDict(obj));
+
+//*Soru-7 Size bazı dilleri ve verilen dillerdeki test sonuçlarınızı içeren bir dictionarj obj verilir. Test puanınızın en az 60 olduğu dillerin listesini sonuçların azalan sırasına göre döndürün.
+//* Not: puanlar her zaman benzersiz olacaktır (bu nedenle yinelenen değerler olmayacaktır)
+//* örnekler
+//* {"Java": 10, "Ruby": 80, "Python": 65}    -->  ["Ruby", "Python"]
+//* {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
+//* {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
+let results = { Java: 10, Ruby: 80, Python: 95 };
+function myLanguages(results) {
+  let filteredObj = {};
+  let arr = [];
+  for (let key in results) {
+    if (results[key] >= 60) {
+      filteredObj[key] = results[key];
+    }
+  }
+  arr = Object.values(filteredObj).sort((a, b) => b - a);
+  let sortedObj = {};
+  arr.forEach((value) => {
+    for (let key in filteredObj) {
+      if (filteredObj[key] === value) {
+        sortedObj[key] = value;
+      }
+    }
+  });
+  return sortedObj;
+}
+console.log(myLanguages(results));
