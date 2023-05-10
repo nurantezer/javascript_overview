@@ -142,3 +142,11 @@ console.log(dizi1.forEach((c) => console.log((c.make))))
 //*Soru-2 2015 yılından sonra üretilmiş arabaları bir listeye ata.
 const newList = carData.filter(c => c.year > 2015)
 console.log(newList)
+
+//*Soru-3 Arabaların ortalama kilometre değerini hesapla.
+// let sum = 0
+// const newList1 = carData.map((car, i, dizi) => (sum += car.mileage))
+// console.log(sum / carData.length)
+
+const newList1 = carData.reduce((acc, cur) => acc + cur.mileage, 0)
+console.log(newList1 / carData.length)
