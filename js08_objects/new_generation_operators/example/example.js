@@ -129,5 +129,12 @@ const carData = [
         cylinders: 4,
       },
     },
-  ];
-  //* 1- Rengi gümüş olan arabaları bir listeye ata.
+];
+  
+//*Soru-1 Rengi gümüş olan arabaları bir listeye ata.
+// let dizi = []
+// carData.forEach((car)=> car.color.toLowerCase() === "silver" ? dizi.push(car) : null)
+// console.log(dizi)
+
+const dizi1 = carData.filter((car) => car['color'] === "Silver")
+console.log(dizi1.forEach((c) =>console.log((c.make))))
