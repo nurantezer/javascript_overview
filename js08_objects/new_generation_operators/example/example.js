@@ -154,3 +154,20 @@ console.log(newList1 / carData.length)
 //*Soru-4 8 silindirli araçları listele
 const eightCylinderCars = carData.filter((car) => car.engine.cylinders === 8);
 console.log(eightCylinderCars);
+
+//*Soru-5 Farklı uzunlukta olması muhtemel iki listeden İlki key'lerden, ikincisi ise Value'lardan oluşmaktadır.
+//* Yine key ve value'lardan oluşan bir obje döndüren bir fonksiyon yazınız. Y
+//* eterli value yoksa, kalan keylerin değeri null olmalıdır. Yeterli anahtar yoksa,
+//*  değerlerin geri kalanını yok sayın.
+//* keys = ['a', 'b', 'c', 'd']
+// *values = [1, 2, 3]
+//* createDict(keys, values) // returns {'a': 1, 'b': 2, 'c': 3, 'd': null}
+
+const createDict = (keys, values) => {
+    const dict = {}
+    keys.forEach((key, index) => {
+        dict[key] = values[index] || null
+    })
+    return dict
+}
+
