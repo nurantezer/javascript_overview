@@ -171,3 +171,16 @@ const createDict = (keys, values) => {
     return dict
 }
 
+//*Soru-6 Bir obje içerisindeki key ve value'ları değiştirin. Yani key'ler value'lar olmalı ve
+//*value'lar key'ler olmalıdır.
+//* Örnek: {a: 1, b: 2, c: 3}  -->  {1: 'a', 2: 'b', 3: 'c'}
+//* Not: Eğer bir value birden fazla key'e sahipse, son key'i kullanın.
+let obj = { a: 1, b: 2, c: 3 };
+function reverseDict(obj) {
+  let newObj = {};
+  for (let key in obj) {
+    newObj[obj[key]] = key;
+  }
+  return newObj;
+}
+console.log(reverseDict(obj));
