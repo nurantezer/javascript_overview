@@ -137,4 +137,8 @@ const carData = [
 // console.log(dizi)
 
 const dizi1 = carData.filter((car) => car['color'] === "Silver")
-console.log(dizi1.forEach((c) =>console.log((c.make))))
+console.log(dizi1.forEach((c) => console.log((c.make))))
+
+//*Soru-2 2015 yılından sonra üretilmiş arabaları bir listeye ata.
+const newList = carData.filter(c => c.year > 2015)
+console.log(newList)
