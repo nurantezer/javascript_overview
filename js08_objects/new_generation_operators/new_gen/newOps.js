@@ -2,72 +2,72 @@
 // //*  DESTRUCTURING (OBJECT)
 // //* ======================================================
 
-// // const myH2 = document.getElementsByTagName("h2")
-// // myH2[0].style.color = "red"
+// const myH2 = document.getElementsByTagName("h2")
+// myH2[0].style.color = "red"
 
-// console.log("****** NEW OPERATORS *******")
+console.log("****** NEW OPERATORS *******")
 
 // //* ======================================================
 // //*  DESTRUCTURING (OBJECT)
 // //* ======================================================
-// const car = {
-//     name: "BMW",
-//     model: 1990,
-//     engine: 1.6,
-//     colors: ["blue", "purple"],
-//   }
+const car = {
+    name: "BMW",
+    model: 1990,
+    engine: 1.6,
+    colors: ["blue", "purple"],
+  }
   
-//   //* 1.YONTEM (Classical)
+  //* 1.YONTEM (Classical)
 
-// const name1 = car.name
-// const model1 = car["model"]
-// console.log(name1)
+const name1 = car.name
+const model1 = car["model"]
+console.log(name1)
 
 // //* 2.YONTEM: DESTRUCTURING
 
-// const { name, model, colors } = car //? destructre
-// console.log(name, model)
-// // ? Objelerin value'larini aktaracagimiz degisken isimlerini
+const { name, model, colors } = car //? destructre
+console.log(name, model)
+// ? Objelerin value'larini aktaracagimiz degisken isimlerini
 // //? objenin property(key) 'lerine esit olmasi gerekir
 
-// let { engine: motor } = car //? isim degisikligi bu sekilde yapilablir
-// console.log(motor)
-// motor = 2.0
-// console.log(motor, car)
+let { engine: motor } = car //? isim degisikligi bu sekilde yapilablir
+console.log(motor)
+motor = 2.0
+console.log(motor, car)
 
-// car.engine = 2.2
-// console.log(car)
+car.engine = 2.2
+console.log(car)
 
 // //* EXAMPLE: NESTED
-// const cars = {
-//     car1: {
-//       name: "BMW",
-//       model: 1990,
-//       engine: 1.6,
-//     },
-//     car2: {
-//       name: "Mercedes",
-//       model: 2022,
-//       engine: 2.0,
-//     },
-// }
+const cars = {
+    car1: {
+      name: "BMW",
+      model: 1990,
+      engine: 1.6,
+    },
+    car2: {
+      name: "Mercedes",
+      model: 2022,
+      engine: 2.0,
+    },
+}
   
-// const { car1, car2 } = cars
-// console.log(car1, car2)
-// console.log(car1.name, car2.engine)
+const { car1, car2 } = cars
+console.log(car1, car2)
+console.log(car1.name, car2.engine)
 
-// const {name:nameCar1, engine:engineCar1} = car1
-// const { name: nameCar2, engine: engineCar2 } = car2
-// console.log(nameCar1, engineCar2)
+const {name:nameCar1, engine:engineCar1} = car1
+const { name: nameCar2, engine: engineCar2 } = car2
+console.log(nameCar1, engineCar2)
 
 //? Nested destructre
-// const {
-//   car1: { name, engine },
-//   car2: { model },
-// } = cars
+const {
+  car1: { name, engine },
+  car2: { model },
+} = cars
 
-// const model2 = cars.car1.model
-// console.log(model2)
+const model2 = cars.car1.model
+console.log(model2)
 
 //* Example
 const team = [

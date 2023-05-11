@@ -132,7 +132,7 @@ const carData = [
 ];
   
 //*Soru-1 Rengi gümüş olan arabaları bir listeye ata.
-// let dizi = []
+// let dizi = [] //forEach kullanıcaksam birşey döndürmediği için önce boş diziye aktarmam lazım.
 // carData.forEach((car)=> car.color.toLowerCase() === "silver" ? dizi.push(car) : null)
 // console.log(dizi)
 
