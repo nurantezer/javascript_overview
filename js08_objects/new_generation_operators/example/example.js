@@ -185,7 +185,8 @@ function reverseDict(obj) {
 }
 console.log(reverseDict(obj));
 
-//*Soru-7 Size bazı dilleri ve verilen dillerdeki test sonuçlarınızı içeren bir dictionarj obj verilir. Test puanınızın en az 60 olduğu dillerin listesini sonuçların azalan sırasına göre döndürün.
+//*Soru-7 Size bazı dilleri ve verilen dillerdeki test sonuçlarınızı içeren bir dictionarj obj verilir. Test puanınızın en az 60 olduğu dillerin 
+//*listesini sonuçların azalan sırasına göre döndürün.
 //* Not: puanlar her zaman benzersiz olacaktır (bu nedenle yinelenen değerler olmayacaktır)
 //* örnekler
 //* {"Java": 10, "Ruby": 80, "Python": 65}    -->  ["Ruby", "Python"]
