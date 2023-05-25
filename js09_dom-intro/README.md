@@ -1,0 +1,4 @@
+- W3C DOM standardı 3 farklı alt birime ayrılmaktadır.
+- CORE DOM bütün döküman tipleri için standart modeldir.
+- XML DOM XML dökümanları için standart modelidir.
+- HTML DOM HTML dökümanları için standart modeldir.
