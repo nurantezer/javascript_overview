@@ -2,3 +2,5 @@
 - CORE DOM bütün döküman tipleri için standart modeldir.
 - XML DOM XML dökümanları için standart modelidir.
 - HTML DOM HTML dökümanları için standart modeldir.
+- Her browser tarafında çalıştırılabilen eş kodlar.
+- DOM APIsi ile ete kemiğe büründürülüyor, JS Engine ile derleniyor browseren sayfasına basılıyor.(article, main gibi) HTML elementlerine erişim dom apisi sayesinde oluyor.
