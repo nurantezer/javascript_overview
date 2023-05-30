@@ -4,3 +4,4 @@
 - HTML DOM HTML dökümanları için standart modeldir.
 - Her browser tarafında çalıştırılabilen eş kodlar.
 - DOM APIsi ile ete kemiğe büründürülüyor, JS Engine ile derleniyor browseren sayfasına basılıyor.(article, main gibi) HTML elementlerine erişim dom apisi sayesinde oluyor.
+- DOM ağacındaği her bir düğüme node denir.
