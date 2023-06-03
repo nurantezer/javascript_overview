@@ -20,3 +20,7 @@ button.style.border = "none"
 button.style.borderRadius = "10px"
 button.style.fontSize = "20px"
 textInput.style.padding = "0.7rem"
+
+//*===========================================
+//*          GETELEMENTSBYTAGNAME()
+//*===========================================
