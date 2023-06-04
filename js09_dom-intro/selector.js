@@ -24,3 +24,8 @@ textInput.style.padding = "0.7rem"
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
+const list = document.getElementsByTagName("li")
+console.log(list) //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
+
+list[0].style.color = "magenta"
+list[list.length - 1].style.color = "purple"
