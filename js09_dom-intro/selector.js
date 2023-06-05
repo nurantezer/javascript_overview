@@ -29,3 +29,7 @@ console.log(list) //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li
 
 list[0].style.color = "magenta"
 list[list.length - 1].style.color = "purple"
+const header = document.getElementsByTagName("header")
+console.log(header[0])
+
+console.log(list.item(3))
