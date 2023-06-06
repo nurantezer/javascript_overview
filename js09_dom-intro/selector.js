@@ -33,3 +33,9 @@ const header = document.getElementsByTagName("header")
 console.log(header[0])
 
 console.log(list.item(3))
+//! getElementsByTagName bize bir HTMLCollection(bir nevi dizi) dondurur.
+
+//! Icerik degistirme (textContent, innerText, innerHTML)
+// list[3].textContent = "REACT / VUE"
+// list[3].innerText = "REACT / VUE / Swelte"
+list[3].innerHTML = "REACT / VUE / Swelte / Angular"
