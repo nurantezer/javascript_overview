@@ -39,3 +39,4 @@ console.log(list.item(3))
 // list[3].textContent = "REACT / VUE"
 // list[3].innerText = "REACT / VUE / Swelte"
 list[3].innerHTML = "REACT / VUE / Swelte / Angular"
+
