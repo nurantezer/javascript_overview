@@ -44,3 +44,9 @@ console.log(list[2].innerText) //? innerText CSS parse islemi yaparak yazi eleme
 console.log(list[2].innerHTML) //? innerHTML tamamen HTML parse islemi yaparak elementlere ulasmamizi saglar
 
 list[4].innerHTML += `<li><a class="link" href="https://www.clarusway.com">CW</a></li>`
+//? HTML kodlarini calistirir. (Guvenlik acisindan problemli)
+
+//*===========================================
+//*          GETELEMENTSBYCLASSNAME()
+//*===========================================
+
