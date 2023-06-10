@@ -49,4 +49,7 @@ list[4].innerHTML += `<li><a class="link" href="https://www.clarusway.com">CW</a
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
 //*===========================================
+const itemList = document.getElementsByClassName("list")
+console.log(itemList) //?HTMLCollection [section.item-list]
+console.log(itemList)
 
