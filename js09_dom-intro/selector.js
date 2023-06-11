@@ -53,3 +53,8 @@ const itemList = document.getElementsByClassName("list")
 console.log(itemList) //?HTMLCollection [section.item-list]
 console.log(itemList)
 
+//? Array.from() (HTMLCollection -> Array)
+const itemListArr = Array.from(itemList)
+console.log(...itemList)
+itemListArr.forEach((x) => console.log(x))
+
