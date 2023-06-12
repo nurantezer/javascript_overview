@@ -58,3 +58,7 @@ const itemListArr = Array.from(itemList)
 console.log(...itemList)
 itemListArr.forEach((x) => console.log(x))
 
+//? SPREAD (HTMLCollection -> Array)
+const itemListSpread = [...itemList]
+console.log(itemListSpread)
+itemListSpread.map((x) => console.log((x.style.color = "red")))
